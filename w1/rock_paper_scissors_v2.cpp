@@ -1,5 +1,11 @@
 // Wrong
 
+/********************************************************
+* https://open.kattis.com/problems/rockpaperscissors	*
+* Copyright: haihv										*
+* v2: using array win and total							*
+********************************************************/
+
 #include "iostream"
 #include "string"
 #include "iomanip"

@@ -1,3 +1,9 @@
+/********************************************************
+* https://open.kattis.com/problems/rockpaperscissors	*
+* Copyright: haihv										*
+* v3: using array win and lost							*
+********************************************************/
+
 #include "iostream"
 #include "string"
 #include "iomanip"
