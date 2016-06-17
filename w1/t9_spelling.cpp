@@ -3,6 +3,8 @@
 * Copyright: haihv															*
 ****************************************************************************/
 
+// Thuat toan: Dung 2 mang character[] va code[] de luu cac ki tu va code tuong ung.
+// Do phuc tap: O(n)
 
 #include "iostream"
 #include "string"

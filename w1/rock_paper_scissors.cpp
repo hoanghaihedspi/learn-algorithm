@@ -3,6 +3,8 @@
 * Copyright: haihv										*
 ********************************************************/
 
+// Thuat toan: Gan gia tri cho Rock, Paper, Scissors tuong ung 0, 1, 2 de xu ly nhanh viec so sanh ket qua
+// Do phuc tap: ...?
 
 #include "iostream"
 #include "string"
@@ -21,14 +23,12 @@ using namespace std;
 void output(vector<int> win, vector<int> lost);
 int winer(string move1, string move2);
 int convert(string move);
-inline void use_io_optimizations() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-}
+inline void use_io_optimizations();
 
 int main()
 {
 	use_io_optimizations();
+
 	int n, k;
 	vector<int> win;
 	vector<int> lost;
@@ -78,4 +78,10 @@ int convert(string move)
 	if(move[0] == 'r') return ROCK;
 	else if(move[0] == 'p') return PAPER;
 	else if(move[0] == 's') return SCISSORS;
+}
+
+inline void use_io_optimizations()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 }

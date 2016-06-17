@@ -3,6 +3,9 @@
 * Copyright: haihv								*
 ************************************************/
 
+// Thuat toan: Tinh tong luong calo va calo trong chat beo -> output.
+// Do phuc tap: ...?
+
 #include "iostream"
 #include "vector"
 #include "string"
@@ -93,6 +96,6 @@ Calo process(vector<string> r)
 
 inline void use_io_optimizations()
 {
-	ios_base::sync_with_stdio();
-	cin.tie();
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 }

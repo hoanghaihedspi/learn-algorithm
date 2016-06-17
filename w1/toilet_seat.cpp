@@ -3,6 +3,8 @@
 * Copyright: haihv							*
 ********************************************/
 
+// Thuat toan: ...
+// Do phuc tap: O(1)
 
 #include "iostream"
 #include "string"

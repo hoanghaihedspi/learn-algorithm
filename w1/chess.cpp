@@ -3,6 +3,12 @@
 * Copyright: haihv							*
 ********************************************/
 
+/* Thuat toan: 	X, Y khac mau -> "Impossible"
+*				X co the den truc tiep Y -> output. So buoc = 1
+*				Xet tung o X co the den (<= 13), neu tu o do den duoc Y -> output. So buoc <= 2.
+* Do phuc tap:	O(1) 
+*/
+
 #include "iostream"
 #include "stdlib.h"
 
@@ -14,11 +20,14 @@ typedef struct _Corrdinates
 	int y;
 } Corrdinates;
 
+inline void use_io_optimizations();;
 bool impossible(Corrdinates X, Corrdinates Y);
 Corrdinates path(Corrdinates X, Corrdinates Y);
 
 int main()
 {
+	use_io_optimizations();
+
 	int n;
 	cin >> n;
 	Corrdinates X, Y;
@@ -67,4 +76,10 @@ bool impossible(Corrdinates X, Corrdinates Y)
 {
 	if((X.x + X.y - Y.x - Y.y) % 2) return true;
 	else return false;
+}
+
+inline void use_io_optimizations()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 }

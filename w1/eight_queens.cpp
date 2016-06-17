@@ -3,6 +3,9 @@
 * Copyright: haihv											*
 ************************************************************/
 
+// Thuat toan: Xet tat ca cac truong hop "Invalid", con lai la "Valid"
+// Do phuc tap: O(1)
+
 #include "iostream"
 
 using namespace std;
